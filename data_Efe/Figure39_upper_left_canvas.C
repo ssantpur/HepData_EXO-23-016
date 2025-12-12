@@ -38,7 +38,8 @@ void Figure39_upper_left_canvas()
    ci = TColor::GetColor("#7a21dd");
    grae->SetMarkerColor(ci);
    grae->SetMarkerStyle(20);
-   grae->SetMarkerSize(2.5);
+   //grae->SetMarkerSize(2.5);
+   grae->SetMarkerSize(3);
    
    TH1F *Graph_divide_h_dxy_NN_trg_BMTF_by_h_dxy_BMTF3001 = new TH1F("Graph_divide_h_dxy_NN_trg_BMTF_by_h_dxy_BMTF3001","",100,0,120);
    Graph_divide_h_dxy_NN_trg_BMTF_by_h_dxy_BMTF3001->SetMinimum(0);
@@ -108,7 +109,8 @@ void Figure39_upper_left_canvas()
    ci = TColor::GetColor("#7a21dd");
    grae->SetMarkerColor(ci);
    grae->SetMarkerStyle(24);
-   grae->SetMarkerSize(2.5);
+   //grae->SetMarkerSize(2.5);
+   grae->SetMarkerSize(3);
    
    TH1F *Graph_divide_h_dxy_trg_BMTF_by_h_dxy_BMTF3002 = new TH1F("Graph_divide_h_dxy_trg_BMTF_by_h_dxy_BMTF3002","",100,0,220);
    Graph_divide_h_dxy_trg_BMTF_by_h_dxy_BMTF3002->SetMinimum(0);
@@ -145,7 +147,7 @@ void Figure39_upper_left_canvas()
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(0);
-   TLegendEntry *entry=leg->AddEntry("divide_h_dxy_trg_BMTF_by_h_dxy_BMTF","beamspot constrained","pe");
+   TLegendEntry *entry=leg->AddEntry("divide_h_dxy_trg_BMTF_by_h_dxy_BMTF","Beam axis-constrained","pe");
 
    ci = TColor::GetColor("#7a21dd");
    entry->SetLineColor(ci);
@@ -155,9 +157,10 @@ void Figure39_upper_left_canvas()
    ci = TColor::GetColor("#7a21dd");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(24);
-   entry->SetMarkerSize(2.5);
+   //entry->SetMarkerSize(2.5);
+   entry->SetMarkerSize(3);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("divide_h_dxy_NN_trg_BMTF_by_h_dxy_BMTF","beamspot unconstrained","pe");
+   entry=leg->AddEntry("divide_h_dxy_NN_trg_BMTF_by_h_dxy_BMTF","Beam axis-unconstrained","pe");
 
    ci = TColor::GetColor("#7a21dd");
    entry->SetLineColor(ci);
@@ -167,7 +170,8 @@ void Figure39_upper_left_canvas()
    ci = TColor::GetColor("#7a21dd");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(20);
-   entry->SetMarkerSize(2.5);
+   //entry->SetMarkerSize(2.5);
+   entry->SetMarkerSize(3);
    entry->SetTextFont(42);
    leg->Draw();
    TLatex *   tex = new TLatex(0.42,0.77,"#font[42]{|#eta^{gen}_{st2}| < 0.83}");
@@ -192,4 +196,5 @@ void Figure39_upper_left_canvas()
    tex->Draw();
    c->Modified();
    c->SetSelected(c);
+   c->SaveAs("Figure_039-a.pdf");
 }

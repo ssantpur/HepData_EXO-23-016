@@ -1,7 +1,7 @@
 #ifdef __CLING__
 #pragma cling optimize(0)
 #endif
-void Figure39_lower()
+void Figure39_lower_canvas()
 {
 //=========Macro generated from canvas: c/
 //=========  (Thu Nov 20 14:00:47 2025) by ROOT version 6.30/07
@@ -38,7 +38,8 @@ void Figure39_lower()
    ci = TColor::GetColor("#3f90da");
    grae->SetMarkerColor(ci);
    grae->SetMarkerStyle(21);
-   grae->SetMarkerSize(2.5);
+   //grae->SetMarkerSize(2.5);
+   grae->SetMarkerSize(3);
    
    TH1F *Graph_divide_h_dxy_NN_trg_EMTF1_by_h_dxy_EMTF13005 = new TH1F("Graph_divide_h_dxy_NN_trg_EMTF1_by_h_dxy_EMTF13005","",100,0,120);
    Graph_divide_h_dxy_NN_trg_EMTF1_by_h_dxy_EMTF13005->SetMinimum(0);
@@ -88,7 +89,8 @@ void Figure39_lower()
    ci = TColor::GetColor("#3f90da");
    grae->SetMarkerColor(ci);
    grae->SetMarkerStyle(25);
-   grae->SetMarkerSize(2.5);
+   //grae->SetMarkerSize(2.5);
+   grae->SetMarkerSize(3);
    
    TH1F *Graph_divide_h_dxy_trg_EMTF1_by_h_dxy_EMTF13006 = new TH1F("Graph_divide_h_dxy_trg_EMTF1_by_h_dxy_EMTF13006","",100,0,220);
    Graph_divide_h_dxy_trg_EMTF1_by_h_dxy_EMTF13006->SetMinimum(0);
@@ -139,7 +141,8 @@ void Figure39_lower()
    ci = TColor::GetColor("#e42536");
    grae->SetMarkerColor(ci);
    grae->SetMarkerStyle(22);
-   grae->SetMarkerSize(2.5);
+   //grae->SetMarkerSize(2.5);
+   grae->SetMarkerSize(3);
    
    TH1F *Graph_divide_h_dxy_NN_trg_EMTF2_by_h_dxy_EMTF23007 = new TH1F("Graph_divide_h_dxy_NN_trg_EMTF2_by_h_dxy_EMTF23007","",100,0,120);
    Graph_divide_h_dxy_NN_trg_EMTF2_by_h_dxy_EMTF23007->SetMinimum(0);
@@ -189,7 +192,8 @@ void Figure39_lower()
    ci = TColor::GetColor("#e42536");
    grae->SetMarkerColor(ci);
    grae->SetMarkerStyle(26);
-   grae->SetMarkerSize(2.5);
+   //grae->SetMarkerSize(2.5);
+   grae->SetMarkerSize(3);
    
    TH1F *Graph_divide_h_dxy_trg_EMTF2_by_h_dxy_EMTF23008 = new TH1F("Graph_divide_h_dxy_trg_EMTF2_by_h_dxy_EMTF23008","",100,0,220);
    Graph_divide_h_dxy_trg_EMTF2_by_h_dxy_EMTF23008->SetMinimum(0);
@@ -238,7 +242,7 @@ void Figure39_lower()
    gaxis->SetTitleFont(62);
    gaxis->Draw();
    
-   TLegend *leg = new TLegend(0.1,0.62,0.86,0.75,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.10,0.62,0.45,0.75,NULL,"brNDC");
    leg->SetBorderSize(0);
    leg->SetTextSize(0.038);
    leg->SetLineColor(1);
@@ -246,19 +250,12 @@ void Figure39_lower()
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(0);
-   TLegendEntry *entry=leg->AddEntry("divide_h_dxy_trg_EMTF1_by_h_dxy_EMTF1","beamspot constrained","pe");
+   TLegendEntry *entry=leg->AddEntry("divide_h_dxy_trg_EMTF1_by_h_dxy_EMTF1","Beam axis-constrained","pe");
 
    ci = TColor::GetColor("#3f90da");
    entry->SetLineColor(ci);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
-
-   ci = TColor::GetColor("#3f90da");
-   entry->SetMarkerColor(ci);
-   entry->SetMarkerStyle(25);
-   entry->SetMarkerSize(2.5);
-   entry->SetTextFont(42);
-   entry=leg->AddEntry("divide_h_dxy_trg_EMTF2_by_h_dxy_EMTF2","beamspot constrained","pe");
 
    ci = TColor::GetColor("#e42536");
    entry->SetLineColor(ci);
@@ -268,9 +265,10 @@ void Figure39_lower()
    ci = TColor::GetColor("#e42536");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(26);
-   entry->SetMarkerSize(2.5);
+   //entry->SetMarkerSize(2.5);
+   entry->SetMarkerSize(3);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("divide_h_dxy_NN_trg_EMTF1_by_h_dxy_EMTF1","beamspot unconstrained","pe");
+   entry=leg->AddEntry("divide_h_dxy_NN_trg_EMTF1_by_h_dxy_EMTF1","Beam axis-unconstrained","pe");
 
    ci = TColor::GetColor("#3f90da");
    entry->SetLineColor(ci);
@@ -280,21 +278,49 @@ void Figure39_lower()
    ci = TColor::GetColor("#3f90da");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(2.5);
-   entry->SetTextFont(42);
-   entry=leg->AddEntry("divide_h_dxy_NN_trg_EMTF2_by_h_dxy_EMTF2","beamspot unconstrained","pe");
-
-   ci = TColor::GetColor("#e42536");
-   entry->SetLineColor(ci);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
-
-   ci = TColor::GetColor("#e42536");
-   entry->SetMarkerColor(ci);
-   entry->SetMarkerStyle(22);
-   entry->SetMarkerSize(2.5);
+   //entry->SetMarkerSize(2.5);
+   entry->SetMarkerSize(3);
    entry->SetTextFont(42);
    leg->Draw();
+
+
+   TLegend *leg2 = new TLegend(0.47,0.62,0.83,0.75,NULL,"brNDC");
+   leg2->SetBorderSize(0);
+   leg2->SetTextSize(0.038);
+   leg2->SetLineColor(1);
+   leg2->SetLineStyle(1);
+   leg2->SetLineWidth(1);
+   leg2->SetFillColor(0);
+   leg2->SetFillStyle(0);
+   TLegendEntry *entry2=leg2->AddEntry("divide_h_dxy_trg_EMTF2_by_h_dxy_EMTF2","Beam axis-constrained","pe");
+
+   ci = TColor::GetColor("#e42536");
+   entry2->SetLineColor(ci);
+   entry2->SetLineStyle(1);
+   entry2->SetLineWidth(1);
+
+   ci = TColor::GetColor("#e42536");
+   entry2->SetMarkerColor(ci);
+   entry2->SetMarkerStyle(26);
+   //entry2->SetMarkerSize(2.5);
+   entry2->SetMarkerSize(3);
+   entry2->SetTextFont(42);
+
+   entry2=leg2->AddEntry("divide_h_dxy_NN_trg_EMTF2_by_h_dxy_EMTF2","Beam axis-unconstrained","pe");
+
+   ci = TColor::GetColor("#e42536");
+   entry2->SetLineColor(ci);
+   entry2->SetLineStyle(1);
+   entry2->SetLineWidth(1);
+
+   ci = TColor::GetColor("#e42536");
+   entry2->SetMarkerColor(ci);
+   entry2->SetMarkerStyle(22);
+   //entry2->SetMarkerSize(2.5);
+   entry2->SetMarkerSize(3);
+   entry2->SetTextFont(42);
+   leg2->Draw();
+
    TLatex *   tex = new TLatex(0.13,0.84,"#font[42]{L1T p_{T} > 10 GeV, gen p_{T} > 15 GeV}");
    tex->SetNDC();
    tex->SetTextSize(0.04);
@@ -305,7 +331,7 @@ void Figure39_lower()
    tex->SetTextSize(0.04);
    tex->SetLineWidth(2);
    tex->Draw();
-      tex = new TLatex(0.52,0.77,"#font[42]{1.6 < |#eta^{gen}_{st2}| < 2.0}");
+      tex = new TLatex(0.5,0.77,"#font[42]{1.6 < |#eta^{gen}_{st2}| < 2.0}");
    tex->SetNDC();
    tex->SetTextSize(0.04);
    tex->SetLineWidth(2);
@@ -322,4 +348,5 @@ void Figure39_lower()
    tex->Draw();
    c->Modified();
    c->SetSelected(c);
+   c->SaveAs("Figure_039-c.pdf");
 }
