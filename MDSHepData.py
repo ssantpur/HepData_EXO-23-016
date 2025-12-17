@@ -253,7 +253,7 @@ def makeFig60table(histograms):
     results = histograms['results']
     table = Table("MDS Run 2, Run 3 acceptance comparison")
     table.description = "Comparison of the acceptances in Run 2 and Run 3 for the CSC (left) and DT (right) MDS triggers at the L1T and HLT as functions of the LLP lifetime, for $H \\to S S \\to b\\bar{{b}}\\,b\\bar{{b}}$ events with $m_{H}=125$ GeV and $m_{S}=40$ GeV, for 2023 conditions. The acceptance is defined as the fraction of events that pass the specified selection, given an LLP decay in the fiducial region of the CSCs (left) or DTs (right). The left plot compares the acceptance of the Run 2 strategy of triggering on $p_T^{miss}$ (blue circles), which corresponds to an offline requirement of $>200$ GeV, with that of the Run 3 strategy of triggering on the MDS signature in the CSCs, for both the L1T (L1T+HLT) acceptance is shown with orange squares (red triangles). The right plot compares the acceptance of the Run 2 strategy of triggering on $p_T^{miss}$ (blue circles) with the Run 3 strategy of triggering on the MDS signature in the DTs (red triangles), for L1T+HLT."
-    table.location = "Data from Fig. 60"
+    table.location = "Data from Fig. 63"
     table.add_image("data_Martin/MDS_CSC_acc_v_ctau_mH-125_mS-40.pdf")
     table.add_image("data_Martin/MDS_DT_acc_v_ctau_mH-125_mS-40.pdf")
 
@@ -292,7 +292,7 @@ def makeFig61table(histograms):
     table = make_hepdata_table_from_arrays(arrays,
                                            table_name ="L1T and L1T+HLT acceptance for CSC MDS",
                                            table_description = "The L1T (blue circles) and L1T+HLT (orange squares) acceptances for the CSC MDS trigger as functions of the LLP decay positions in the $z$-direction, for $H \\to S S \\to b\\bar{{b}}\\,b\\bar{{b}}$ events with $m_{H}=350$ GeV, $m_{S}=80$ GeV, and $c\\tau_{S}=1$ m, for 2023 conditions.",
-                                           table_location = "Data from Fig. 61",
+                                           table_location = "Data from Fig. 64",
                                            table_image = "data_Martin/MDS_CSC_acc_v_Z.pdf",
                                            independent_names = ["LLP decay Z"],
                                            independent_units =["cm"],
@@ -322,7 +322,7 @@ def makeFig62table(histograms):
     table = make_hepdata_table_from_arrays(arrays,
                                            table_name ="HLT and L1T+HLT aceptance for DT MDS",
                                            table_description = "The HLT (blue circles) and L1T+HLT (orange squares) acceptances for the DT MDS trigger as functions of the LLP decay positions in the radial direction, for $H \\to S S \\to b\\bar{{b}}\\,b\\bar{{b}}$ events with $m_{H}=350$ GeV, $m_{S}=80$ GeV, and $c\\tau_{S}=1$ m, for 2023 conditions.",
-                                           table_location = "Data from Fig. 62",
+                                           table_location = "Data from Fig. 65",
                                            table_image = "data_Martin/MDS_DT_acc_v_r.pdf",
                                            independent_names = ["LLP decay R"],
                                            independent_units =["cm"],
@@ -352,7 +352,7 @@ def makeFig63leftTable(histograms):
     table = make_hepdata_table_from_arrays(arrays,
                                            table_name ="2D L1T acceptance for CSC MDS",
                                            table_description = "The L1T acceptance for the CSC MDS trigger as functions of the LLP decay position, for $H \\to S S \\to b\\bar{{b}}\\,b\\bar{{b}}$ events with $m_{H}=350$ GeV, $m_{S}=80$ GeV, and $c\\tau_{S}=1$ m, for 2023 conditions.",
-                                           table_location = "Data from Fig. 63 left",
+                                           table_location = "Data from Fig. 66 left",
                                            table_image = "data_Martin/MDS_CSC_2D_L1acc_v_rZ.pdf",
                                            independent_names = ["LLP decay Z","LLP decay R"],
                                            independent_units =["cm","cm"],
@@ -365,7 +365,7 @@ def makeFig63rightTable(histograms):
     table = make_hepdata_table_from_arrays(arrays_hlt,
                                            table_name ="2D L1T+HLT acceptance for CSC MDS",
                                            table_description = "The L1T+HLT acceptance for the CSC MDS trigger as functions of the LLP decay position, for $H \\to S S \\to b\\bar{{b}}\\,b\\bar{{b}}$ events with $m_{H}=350$ GeV, $m_{S}=80$ GeV, and $c\\tau_{S}=1$ m, for 2023 conditions.",
-                                           table_location = "Data from Fig. 63 right",
+                                           table_location = "Data from Fig. 66 right",
                                            table_image = "data_Martin/MDS_CSC_2D_HLTacc_v_rZ.pdf",
                                            independent_names = ["LLP decay Z","LLP decay R"],
                                            independent_units =["cm","cm"],
@@ -384,7 +384,7 @@ def makeFig64table(histograms):
     table = make_hepdata_table_from_arrays(arrays,
                                            table_name ="2D HLT acceptance for DT MDS",
                                            table_description = "The HLT acceptance for the DT MDS trigger as a function of the LLP decay position, for $H \\to S S \\to b\\bar{{b}}\\,b\\bar{{b}}$ events with $m_{H}=350$ GeV, $m_{S}=80$ GeV, and $c\\tau_{S}=1$ m, for 2023 conditions. The L1T acceptance that is based on the $p_T^{miss}$ trigger is not included.",
-                                           table_location = "Data from Fig. 64",
+                                           table_location = "Data from Fig. 67",
                                            table_image = "data_Martin/MDS_DT_2D_HLTacc_v_rZ.pdf",
                                            independent_names = ["LLP decay Z","LLP decay R"],
                                            independent_units =["cm","cm"],

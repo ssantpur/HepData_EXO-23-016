@@ -148,10 +148,10 @@ def makePt40EffTable():
     
 def makePtrkEffTable():
     table = Table("Displaced jet HLT tracking requirement efficiency" )
-    table.description = "Efficiency of an offline calorimeter jet to have at most one HLT prompt track for 2022 conditions, as a function of the number of offline prompt tracks, in simulated $\mathrm{H}\to\mathrm{SS}$, $\mathrm{S}\to\mathrm{b\overline{b}}$ signal events where $m_{\mathrm{H}} = 125~\mathrm{GeV}$ and $m_{\mathrm{S}}=40~\mathrm{GeV}$. Two proper decay lengths of the $\mathrm{S}$ particle are shown: $c\\tau=10~\mathrm{mm}$ (green circles) and $c\\tau = 100~\mathrm{mm}$ (blue squares)."
+    table.description = "Efficiency of an offline calorimeter jet to have at most one HLT prompt track for 2022 conditions, as a function of the number of offline prompt tracks, in simulated $\\mathrm{H} \\to \\mathrm{SS}$, $\mathrm{S} \\to \mathrm{b\overline{b}}$ signal events where $m_{\mathrm{H}} = 125~\mathrm{GeV}$ and $m_{\mathrm{S}}=40~\mathrm{GeV}$. Two proper decay lengths of the $\mathrm{S}$ particle are shown: $c\\tau=10~\mathrm{mm}$ (green circles) and $c\\tau = 100~\mathrm{mm}$ (blue squares)."
     image = "data_Jingyu/DisplacedJet_Trigger_Run3_signal_prompttrack_veto_eff.pdf"
     reader = RootFileReader("data_Jingyu/DisplacedJet_Trigger_Run3_signal_prompttrack_veto_eff.root")
-    table.loaction = "Data from Fig. 17 (right)"
+    table.location = "Data from Fig. 17 (right)"
     table.add_image(image)
     plot10mm = reader.read_teff("eff_10mm")
     plot100mm = reader.read_teff("eff_100mm")
@@ -171,7 +171,7 @@ def makeGenEffTable():
     table.description = "The per-parton (quark or lepton) HLT displaced-jet tagging efficiency as a function of the generator-level $L_{xy}$ of the parton is shown for displaced b quarks (blue circles), d quarks (purple triangels), and $\\tau$ leptons (green squares) with $p_{\mathrm{T}}>40~\mathrm{GeV}$ and $|\eta|<2.0$."
     image = "data_Jingyu/DisplacedJets_GenEff_cm.pdf"
     reader = RootFileReader("data_Jingyu/DisplacedJets_GenEff_cm.root")
-    table.loaction = "Data from Fig. 18"
+    table.location = "Data from Fig. 18"
     table.add_image(image)
     plotbb = reader.read_teff("eff_dxy_bb")
     plotdd = reader.read_teff("eff_dxy_dd")
@@ -188,7 +188,7 @@ def makeGenEffTable():
     
 def makeGainTable():
     table = Table("Displaced jet trigger efficiency Run 3 v.s. Run 2 ratio")
-    table.description = "The ratio between the Run 3 displaced-jet trigger efficiency and the Run 2 displaced jet trigger efficiency as a function of LLP $c\\tau$, in simulated $\mathrm{H}\to\mathrm{SS}$, $\mathrm{S}\to\mathrm{b\overline{b}}$ signal events where $m_{\mathrm{H}}=125~\mathrm{GeV}$ and $m_{\mathrm{S}}=15$ (blue triangles), 40 (green squares), or 55 (red circles)$\mathrm{GeV}$. The Run 3 displaced trigger efficiencies are measured for 2022 conditions."
+    table.description = "The ratio between the Run 3 displaced-jet trigger efficiency and the Run 2 displaced jet trigger efficiency as a function of LLP $c\\tau$, in simulated $\\mathrm{H}\\to\\mathrm{SS}$, $\\mathrm{S}\\to\\mathrm{b\overline{b}}$ signal events where $m_{\mathrm{H}}=125~\mathrm{GeV}$ and $m_{\mathrm{S}}=15$ (blue triangles), 40 (green squares), or 55 (red circles)$\mathrm{GeV}$. The Run 3 displaced trigger efficiencies are measured for 2022 conditions."
     image = "data_Jingyu/DisplacedJet_Trigger_Run3vsRun2_efficiency_gain.pdf"
     reader = RootFileReader("data_Jingyu/DisplacedJet_Trigger_Run3vsRun2_efficiency_gain.root")
     table.location = "Data from Fig. 19"
@@ -1151,18 +1151,18 @@ def convertHLTMuResoToYaml(rootfile, label, xtitle, ytitle, units):
 
 def makeHLTMuResoTable(xvar):
     if xvar == "genpt":
-        table = convertHLTMuResoToYaml("data_Ansar/HLTMuonsRes_vs_genpt.root", "Figure 69 left", "$p_\\text{T}^\\text{gen}$", "$\\text{Fitted }\\sigma : (1/p_\\text{T}^\\text{HLT} - 1/p_\\text{T}^\\text{gen}) / 1/p_\\text{T}^\\text{gen}$", "GeV")
+        table = convertHLTMuResoToYaml("data_Ansar/HLTMuonsRes_vs_genpt.root", "HLT muon pt resolution vs pt", "$p_\\text{T}^\\text{gen}$", "$\\text{Fitted }\\sigma : (1/p_\\text{T}^\\text{HLT} - 1/p_\\text{T}^\\text{gen}) / 1/p_\\text{T}^\\text{gen}$", "GeV")
         table.description = "Inverse HLT muon $p_\\text{T}$ resolution ($(1/p_\\text{T}^\\text{HLT}-1/p_\\text{T}^\\text{gen})/(1/p_\\text{T}^\\text{gen})$) as a function of the generator-level muon $p_\\text{T}$, for simulated HAHM signal events, where the dark Higgs boson ($\\text{H}_\\text{D}$) mixes with the SM Higgs boson ($\\text{H}$) and decays to a pair of long-lived dark photons ($\\text{Z}_\\text{D}$), for various values of $m_{\\text{Z}_\\text{D}}$ and $\\epsilon$. Conditions for 2022 data-taking are shown. The muons must have $p_\\text{T}>10\\text{ GeV}$, and the L2 and L3 muons are geometrically matched to the generator-level muons."
-        table.location = "Data from Figure 69 left"
+        table.location = "Data from Figure 70 left"
         table.add_image("data_Ansar/HLTMuonsRes_vs_genpt.png")
         table.keywords["cmenergies"] = [13600.0]
         table.keywords["reactions"] = ["P P --> H --> ZD ZD --> MU MU + ANYTHING"]
         table.keywords["phrases"] = ["pT resolution", "L2 muons", "L3 muons", "Tracker muon", "Displaced standalone muon", "pT"]
 
     elif xvar == "genlxy":
-        table = convertHLTMuResoToYaml("data_Ansar/HLTMuonsRes_vs_genlxy.root", "Figure 69 right", "$L_{xy}^\\text{gen}$", "$\\text{Fitted }\\sigma : (1/p_\\text{T}^\\text{HLT} - 1/p_\\text{T}^\\text{gen}) / 1/p_\\text{T}^\\text{gen}$", "cm")
+        table = convertHLTMuResoToYaml("data_Ansar/HLTMuonsRes_vs_genlxy.root", "HLT muon pt resolution vs Lxy", "$L_{xy}^\\text{gen}$", "$\\text{Fitted }\\sigma : (1/p_\\text{T}^\\text{HLT} - 1/p_\\text{T}^\\text{gen}) / 1/p_\\text{T}^\\text{gen}$", "cm")
         table.description = "Inverse HLT muon $p_\\text{T}$ resolution ($(1/p_\\text{T}^\\text{HLT}-1/p_\\text{T}^\\text{gen})/(1/p_\\text{T}^\\text{gen})$) as a function of the generator-level $L_{xy}$, for simulated HAHM signal events, where the dark Higgs boson ($\\text{H}_\\text{D}$) mixes with the SM Higgs boson ($\\text{H}$) and decays to a pair of long-lived dark photons ($\\text{Z}_\\text{D}$), for various values of $m_{\\text{Z}_\\text{D}}$ and $\\epsilon$. Conditions for 2022 data-taking are shown. The muons must have $p_\\text{T}>10\\text{ GeV}$, and the L2 and L3 muons are geometrically matched to the generator-level muons. The dashed vertical lines indicate the radial positions of the layers of the tracking detectors, with BPX, TIB, and TOB denoting the barrel pixel, tracker inner barrel, and tracker outer barrel, respectively."
-        table.location = "Data from Figure 69 right"
+        table.location = "Data from Figure 70 right"
         table.add_image("data_Ansar/HLTMuonsRes_vs_genlxy.png")
         table.keywords["cmenergies"] = [13600.0]
         table.keywords["reactions"] = ["P P --> H --> ZD ZD --> MU MU + ANYTHING"]
@@ -1232,7 +1232,7 @@ plotted with respect to the generator-level $\\tau$ lepton decay vertex radial p
 Selections on the visible component of the generator-level $\\tau$ lepton $\mathrm{p_{T}}$ ($\mathrm{p_{T}}(\\tau) > 30$ GeV), \
 its pseudorapidity ($|\\eta(\\tau)| <$ 2.1), and its decay vertex radial position ($R < $115 cm) are applied."
     
-    table.location = f"Data from Fig. 70"
+    table.location = f"Data from Fig. 68"
     table.add_image("data_Sara/efficiency_tau_lxy_ditau_perEvt_GENpT30_Tau32_M100ctau100_officialsummer22EE_radiusWithin115.pdf")
     
     reader = RootFileReader("data_Sara/Fig70_tau_gen_lxy.root")
@@ -1436,7 +1436,8 @@ def makeDelayedJetTimeTable(rootfile, table_title, hlt_text, location):
 
     return table
 
-#Figure 65 and 66
+#old Figures 65 and 66
+#new Figures 61 and 62
 def makeAcceptanceTables(mH, mX, coord):
     tag = f"{mH}_{mX}"
     if coord == "R":
@@ -1482,9 +1483,9 @@ def makeAcceptanceTables(mH, mX, coord):
             title = f"{short} acceptance vs Z (mH={mH}, mX={mX})"
         table = Table(title)
         if coord == "R":
-            table.location = "Data from Fig. 65 " + location
+            table.location = "Data from Fig. 61 " + location
         else:
-            table.location = "Data from Fig. 66 " + location
+            table.location = "Data from Fig. 62 " + location
         table.description = ("The L1T+HLT acceptances for various LLP triggers using different subdetectors, as functions of the " + position_phrase + f", for $H \\to X X \\to b\\bar{{b}}\\,b\\bar{{b}}$ events for 2023 conditions with $m_H={mH}\\,\\mathrm{{GeV}}$ and $m_X={mX}\\,\\mathrm{{GeV}}$. The $c\\tau$ is 0.1\\,m for the displaced-jet triggers using the tracker and 1\\,m for the other triggers. The acceptance is shown for the displaced-jet triggers using the tracker (cyan points), for the delayed-jet triggers using ECAL timing (red circles), for the displaced-jet triggers using the HCAL (blue squares), for the MDS triggers with the DTs (green triangles), and for the MDS triggers with the CSCs (pink points). The boundaries of the tracker, ECAL, HCAL, DTs, and CSCs are also shown.")
         table.add_image(pdfbase + ".pdf")
 
@@ -1952,7 +1953,20 @@ def main():
     submission.add_table(makeMuonNoBPTXRateVsNBunchesTable("2023"))
     submission.add_table(makeMuonNoBPTXRateVsNBunchesTable("2024"))
 
-    #Figures 60-64
+    #old Figure 65
+    #new Figure 61
+    mass_points = [(125,25), (350,80), (350,160), (1000,200)]
+    for mH, mX in mass_points:
+        for t in makeAcceptanceTables(mH, mX, "R"):
+            submission.add_table(t)
+    #old Figure 66
+    #new Figure 62
+    for mH, mX in mass_points:
+        for t in makeAcceptanceTables(mH, mX, "Z"):
+            submission.add_table(t)
+
+    #old Figures 60-64
+    #new Figures 63-67
     submission.add_table(makeFig60table(histograms))
     submission.add_table(makeFig61table(histograms))
     submission.add_table(makeFig62table(histograms))
@@ -1960,22 +1974,14 @@ def main():
     submission.add_table(makeFig63rightTable(histograms))
     submission.add_table(makeFig64table(histograms))
 
-    #Figure 65
-    mass_points = [(125,25), (350,80), (350,160), (1000,200)]
-    for mH, mX in mass_points:
-        for t in makeAcceptanceTables(mH, mX, "R"):
-            submission.add_table(t)
-    #Figure 66
-    for mH, mX in mass_points:
-        for t in makeAcceptanceTables(mH, mX, "Z"):
-            submission.add_table(t)
-        
-    # Figure 69
+    #old Figure 70
+    #new Figure 68
+    submission.add_table(makeDisplacedTauAccTable())
+
+    #old Figure 69
+    #new Figure 70
     submission.add_table(makeHLTMuResoTable("genpt"))
     submission.add_table(makeHLTMuResoTable("genlxy"))
-
-    # Figure 70
-    submission.add_table(makeDisplacedTauAccTable())
     
     for table in submission.tables:
         table.keywords["cmenergies"] = [13000,13600]
