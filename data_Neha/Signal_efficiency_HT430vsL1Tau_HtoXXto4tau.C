@@ -4,7 +4,7 @@
 void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
 {
 //=========Macro generated from canvas: FigExample_800-600_0-prelim-out/FigExample_800-600_0-prelim-out
-//=========  (Tue Dec 16 23:55:28 2025) by ROOT version 6.26/11
+//=========  (Thu Dec 18 15:22:48 2025) by ROOT version 6.26/11
    TCanvas *FigExample_800-600_0-prelim-out = new TCanvas("FigExample_800-600_0-prelim-out", "FigExample_800-600_0-prelim-out",0,0,800,600);
    gStyle->SetOptFit(1);
    gStyle->SetOptStat(0);
@@ -25,9 +25,9 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    FigExample_800-600_0-prelim-out->SetFrameBorderMode(0);
    FigExample_800-600_0-prelim-out->SetFrameFillStyle(0);
    FigExample_800-600_0-prelim-out->SetFrameBorderMode(0);
-   Double_t xAxis1[17] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200, 1500}; 
+   Double_t xAxis1[16] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200}; 
    
-   TH1D *hDivInc__1__1 = new TH1D("hDivInc__1__1","Inclusive tau, Single jet, MH1000, 2ns delay, HT, H to XX to 4tau",16, xAxis1);
+   TH1D *hDivInc__1__1 = new TH1D("hDivInc__1__1","Inclusive tau, Single jet, MH1000, 2ns delay, HT, H to XX to 4tau",15, xAxis1);
    hDivInc__1__1->SetBinContent(4,0.00862069);
    hDivInc__1__1->SetBinContent(6,0.01666667);
    hDivInc__1__1->SetBinContent(7,0.01149425);
@@ -40,7 +40,6 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDivInc__1__1->SetBinContent(14,0.8194444);
    hDivInc__1__1->SetBinContent(15,0.9047619);
    hDivInc__1__1->SetBinContent(16,0.25);
-   hDivInc__1__1->SetBinContent(17,1);
    hDivInc__1__1->SetBinError(4,0.008583451);
    hDivInc__1__1->SetBinError(6,0.00954198);
    hDivInc__1__1->SetBinError(7,0.008080818);
@@ -83,9 +82,9 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDivInc__1__1->GetZaxis()->SetTitleOffset(1);
    hDivInc__1__1->GetZaxis()->SetTitleFont(42);
    hDivInc__1__1->Draw("axis");
-   Double_t xAxis2[17] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200, 1500}; 
+   Double_t xAxis2[16] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200}; 
    
-   TH1D *hDivInc__1__2 = new TH1D("hDivInc__1__2","Inclusive tau, Single jet, MH1000, 2ns delay, HT, H to XX to 4tau",16, xAxis2);
+   TH1D *hDivInc__1__2 = new TH1D("hDivInc__1__2","Inclusive tau, Single jet, MH1000, 2ns delay, HT, H to XX to 4tau",15, xAxis2);
    hDivInc__1__2->SetBinContent(4,0.00862069);
    hDivInc__1__2->SetBinContent(6,0.01666667);
    hDivInc__1__2->SetBinContent(7,0.01149425);
@@ -98,7 +97,6 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDivInc__1__2->SetBinContent(14,0.8194444);
    hDivInc__1__2->SetBinContent(15,0.9047619);
    hDivInc__1__2->SetBinContent(16,0.25);
-   hDivInc__1__2->SetBinContent(17,1);
    hDivInc__1__2->SetBinError(4,0.008583451);
    hDivInc__1__2->SetBinError(6,0.00954198);
    hDivInc__1__2->SetBinError(7,0.008080818);
@@ -141,9 +139,9 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDivInc__1__2->GetZaxis()->SetTitleOffset(1);
    hDivInc__1__2->GetZaxis()->SetTitleFont(42);
    hDivInc__1__2->Draw("APE0 same");
-   Double_t xAxis3[17] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200, 1500}; 
+   Double_t xAxis3[16] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200}; 
    
-   TH1D *hDivInc__2__3 = new TH1D("hDivInc__2__3","Inclusive tau, Single jet, MH1000, 2ns delay, HT, H to XX to 4tau",16, xAxis3);
+   TH1D *hDivInc__2__3 = new TH1D("hDivInc__2__3","Inclusive tau, Single jet, MH1000, 2ns delay, HT, H to XX to 4tau",15, xAxis3);
    hDivInc__2__3->SetBinContent(4,0.00862069);
    hDivInc__2__3->SetBinContent(6,0.01666667);
    hDivInc__2__3->SetBinContent(7,0.01149425);
@@ -156,7 +154,6 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDivInc__2__3->SetBinContent(14,0.8194444);
    hDivInc__2__3->SetBinContent(15,0.9047619);
    hDivInc__2__3->SetBinContent(16,0.25);
-   hDivInc__2__3->SetBinContent(17,1);
    hDivInc__2__3->SetBinError(4,0.008583451);
    hDivInc__2__3->SetBinError(6,0.00954198);
    hDivInc__2__3->SetBinError(7,0.008080818);
@@ -198,9 +195,9 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDivInc__2__3->GetZaxis()->SetTitleOffset(1);
    hDivInc__2__3->GetZaxis()->SetTitleFont(42);
    hDivInc__2__3->Draw("PE0 same");
-   Double_t xAxis4[17] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200, 1500}; 
+   Double_t xAxis4[16] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200}; 
    
-   TH1D *hDiv__3__4 = new TH1D("hDiv__3__4","hDiv",16, xAxis4);
+   TH1D *hDiv__3__4 = new TH1D("hDiv__3__4","hDiv",15, xAxis4);
    hDiv__3__4->SetBinContent(4,0.00862069);
    hDiv__3__4->SetBinContent(6,0.01111111);
    hDiv__3__4->SetBinContent(7,0.01149425);
@@ -213,7 +210,6 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDiv__3__4->SetBinContent(14,0.7916667);
    hDiv__3__4->SetBinContent(15,0.9047619);
    hDiv__3__4->SetBinContent(16,0.25);
-   hDiv__3__4->SetBinContent(17,1);
    hDiv__3__4->SetBinError(4,0.008583451);
    hDiv__3__4->SetBinError(6,0.007812972);
    hDiv__3__4->SetBinError(7,0.008080818);
@@ -254,9 +250,9 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDiv__3__4->GetZaxis()->SetTitleOffset(1);
    hDiv__3__4->GetZaxis()->SetTitleFont(42);
    hDiv__3__4->Draw("PE0 same");
-   Double_t xAxis5[17] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200, 1500}; 
+   Double_t xAxis5[16] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200}; 
    
-   TH1D *hDiv__4__5 = new TH1D("hDiv__4__5","hDiv",16, xAxis5);
+   TH1D *hDiv__4__5 = new TH1D("hDiv__4__5","hDiv",15, xAxis5);
    hDiv__4__5->SetBinContent(4,0.00862069);
    hDiv__4__5->SetBinContent(6,0.01111111);
    hDiv__4__5->SetBinContent(7,0.01149425);
@@ -269,7 +265,6 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDiv__4__5->SetBinContent(14,0.7916667);
    hDiv__4__5->SetBinContent(15,0.9047619);
    hDiv__4__5->SetBinContent(16,0.25);
-   hDiv__4__5->SetBinContent(17,1);
    hDiv__4__5->SetBinError(4,0.008583451);
    hDiv__4__5->SetBinError(6,0.007812972);
    hDiv__4__5->SetBinError(7,0.008080818);
@@ -309,9 +304,9 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDiv__4__5->GetZaxis()->SetTitleOffset(1);
    hDiv__4__5->GetZaxis()->SetTitleFont(42);
    hDiv__4__5->Draw("PE0 same");
-   Double_t xAxis6[17] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200, 1500}; 
+   Double_t xAxis6[16] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200}; 
    
-   TH1D *hDivtau__5__6 = new TH1D("hDivtau__5__6","hDivtau",16, xAxis6);
+   TH1D *hDivtau__5__6 = new TH1D("hDivtau__5__6","hDivtau",15, xAxis6);
    hDivtau__5__6->SetBinContent(2,0.1666667);
    hDivtau__5__6->SetBinContent(3,0.2325581);
    hDivtau__5__6->SetBinContent(4,0.3103448);
@@ -327,7 +322,6 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDivtau__5__6->SetBinContent(14,0.7916667);
    hDivtau__5__6->SetBinContent(15,0.9047619);
    hDivtau__5__6->SetBinContent(16,0.25);
-   hDivtau__5__6->SetBinContent(17,1);
    hDivtau__5__6->SetBinError(2,0.05071505);
    hDivtau__5__6->SetBinError(3,0.04555534);
    hDivtau__5__6->SetBinError(4,0.04295456);
@@ -371,9 +365,9 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDivtau__5__6->GetZaxis()->SetTitleOffset(1);
    hDivtau__5__6->GetZaxis()->SetTitleFont(42);
    hDivtau__5__6->Draw("PE0 same");
-   Double_t xAxis7[17] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200, 1500}; 
+   Double_t xAxis7[16] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200}; 
    
-   TH1D *hDivtau__6__7 = new TH1D("hDivtau__6__7","hDivtau",16, xAxis7);
+   TH1D *hDivtau__6__7 = new TH1D("hDivtau__6__7","hDivtau",15, xAxis7);
    hDivtau__6__7->SetBinContent(2,0.1666667);
    hDivtau__6__7->SetBinContent(3,0.2325581);
    hDivtau__6__7->SetBinContent(4,0.3103448);
@@ -389,7 +383,6 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDivtau__6__7->SetBinContent(14,0.7916667);
    hDivtau__6__7->SetBinContent(15,0.9047619);
    hDivtau__6__7->SetBinContent(16,0.25);
-   hDivtau__6__7->SetBinContent(17,1);
    hDivtau__6__7->SetBinError(2,0.05071505);
    hDivtau__6__7->SetBinError(3,0.04555534);
    hDivtau__6__7->SetBinError(4,0.04295456);
@@ -432,9 +425,9 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDivtau__6__7->GetZaxis()->SetTitleOffset(1);
    hDivtau__6__7->GetZaxis()->SetTitleFont(42);
    hDivtau__6__7->Draw("PE0 same");
-   Double_t xAxis8[17] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200, 1500}; 
+   Double_t xAxis8[16] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200}; 
    
-   TH1D *hDivInctau__7__8 = new TH1D("hDivInctau__7__8","hDivInctau",16, xAxis8);
+   TH1D *hDivInctau__7__8 = new TH1D("hDivInctau__7__8","hDivInctau",15, xAxis8);
    hDivInctau__7__8->SetBinContent(2,0.2037037);
    hDivInctau__7__8->SetBinContent(3,0.2674419);
    hDivInctau__7__8->SetBinContent(4,0.3189655);
@@ -450,7 +443,6 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDivInctau__7__8->SetBinContent(14,0.8194444);
    hDivInctau__7__8->SetBinContent(15,0.9047619);
    hDivInctau__7__8->SetBinContent(16,0.25);
-   hDivInctau__7__8->SetBinContent(17,1);
    hDivInctau__7__8->SetBinError(2,0.05480749);
    hDivInctau__7__8->SetBinError(3,0.04772946);
    hDivInctau__7__8->SetBinError(4,0.04327404);
@@ -494,9 +486,9 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDivInctau__7__8->GetZaxis()->SetTitleOffset(1);
    hDivInctau__7__8->GetZaxis()->SetTitleFont(42);
    hDivInctau__7__8->Draw("PE0 same");
-   Double_t xAxis9[17] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200, 1500}; 
+   Double_t xAxis9[16] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200}; 
    
-   TH1D *hDivInctau__8__9 = new TH1D("hDivInctau__8__9","hDivInctau",16, xAxis9);
+   TH1D *hDivInctau__8__9 = new TH1D("hDivInctau__8__9","hDivInctau",15, xAxis9);
    hDivInctau__8__9->SetBinContent(2,0.2037037);
    hDivInctau__8__9->SetBinContent(3,0.2674419);
    hDivInctau__8__9->SetBinContent(4,0.3189655);
@@ -512,7 +504,6 @@ void Signal_efficiency_HT430vsL1Tau_HtoXXto4tau()
    hDivInctau__8__9->SetBinContent(14,0.8194444);
    hDivInctau__8__9->SetBinContent(15,0.9047619);
    hDivInctau__8__9->SetBinContent(16,0.25);
-   hDivInctau__8__9->SetBinContent(17,1);
    hDivInctau__8__9->SetBinError(2,0.05480749);
    hDivInctau__8__9->SetBinError(3,0.04772946);
    hDivInctau__8__9->SetBinError(4,0.04327404);
@@ -623,9 +614,9 @@ tex->SetNDC();
    tex->SetTextSize(0.043);
    tex->SetLineWidth(2);
    tex->Draw();
-   Double_t xAxis10[17] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200, 1500}; 
+   Double_t xAxis10[16] = {0, 30, 60, 90, 120, 150, 180, 210, 270, 330, 390, 450, 570, 690, 930, 1200}; 
    
-   TH1D *hDivInc__1_copy__10 = new TH1D("hDivInc__1_copy__10","Inclusive tau, Single jet, MH1000, 2ns delay, HT, H to XX to 4tau",16, xAxis10);
+   TH1D *hDivInc__1_copy__10 = new TH1D("hDivInc__1_copy__10","Inclusive tau, Single jet, MH1000, 2ns delay, HT, H to XX to 4tau",15, xAxis10);
    hDivInc__1_copy__10->SetBinContent(4,0.00862069);
    hDivInc__1_copy__10->SetBinContent(6,0.01666667);
    hDivInc__1_copy__10->SetBinContent(7,0.01149425);
@@ -638,7 +629,6 @@ tex->SetNDC();
    hDivInc__1_copy__10->SetBinContent(14,0.8194444);
    hDivInc__1_copy__10->SetBinContent(15,0.9047619);
    hDivInc__1_copy__10->SetBinContent(16,0.25);
-   hDivInc__1_copy__10->SetBinContent(17,1);
    hDivInc__1_copy__10->SetBinError(4,0.008583451);
    hDivInc__1_copy__10->SetBinError(6,0.00954198);
    hDivInc__1_copy__10->SetBinError(7,0.008080818);
