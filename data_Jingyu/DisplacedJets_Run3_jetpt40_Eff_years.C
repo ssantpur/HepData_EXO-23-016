@@ -4,10 +4,10 @@
 void DisplacedJets_Run3_jetpt40_Eff_years()
 {
 //=========Macro generated from canvas: can/can
-//=========  (Sun Dec 14 17:06:04 2025) by ROOT version 6.34.04
+//=========  (Wed Dec 17 20:24:03 2025) by ROOT version 6.34.04
    TCanvas *can = new TCanvas("can", "can",0,62,800,800);
    can->SetHighLightColor(2);
-   can->Range(-24.31579,-0.25,149.3684,1.416667);
+   can->Range(-24.31579,-0.21,149.3684,1.19);
    can->SetFillColor(0);
    can->SetBorderMode(0);
    can->SetBorderSize(2);
@@ -79,10 +79,11 @@ void DisplacedJets_Run3_jetpt40_Eff_years()
    ci = TColor::GetColor("#00cc00");
    grae->SetMarkerColor(ci);
    grae->SetMarkerStyle(21);
+   grae->SetMarkerSize(1.5);
    
    TH1F *Graph_eff_graph3001 = new TH1F("Graph_eff_graph3001","",120,0,132);
    Graph_eff_graph3001->SetMinimum(0);
-   Graph_eff_graph3001->SetMaximum(1.25);
+   Graph_eff_graph3001->SetMaximum(1.05);
    Graph_eff_graph3001->SetDirectory(nullptr);
    Graph_eff_graph3001->SetStats(0);
 
@@ -163,6 +164,7 @@ void DisplacedJets_Run3_jetpt40_Eff_years()
    ci = TColor::GetColor("#ff0000");
    grae->SetMarkerColor(ci);
    grae->SetMarkerStyle(22);
+   grae->SetMarkerSize(1.5);
    
    TH1F *Graph_eff_graph3002 = new TH1F("Graph_eff_graph3002","Filter Efficiency for Online Calo Jet",120,0,132);
    Graph_eff_graph3002->SetMinimum(0);
@@ -237,6 +239,7 @@ void DisplacedJets_Run3_jetpt40_Eff_years()
    grae->SetTitle("Filter Efficiency for Online Calo Jet");
    grae->SetFillColor(19);
    grae->SetMarkerStyle(20);
+   grae->SetMarkerSize(1.5);
    
    TH1F *Graph_eff_graph3003 = new TH1F("Graph_eff_graph3003","Filter Efficiency for Online Calo Jet",120,0,132);
    Graph_eff_graph3003->SetMinimum(0);
@@ -313,6 +316,7 @@ void DisplacedJets_Run3_jetpt40_Eff_years()
    grae->SetLineColor(6);
    grae->SetMarkerColor(6);
    grae->SetMarkerStyle(23);
+   grae->SetMarkerSize(1.5);
    
    TH1F *Graph_eff_graph3004 = new TH1F("Graph_eff_graph3004","Filter Efficiency for Online Calo Jet",120,0,132);
    Graph_eff_graph3004->SetMinimum(0);
@@ -393,6 +397,7 @@ void DisplacedJets_Run3_jetpt40_Eff_years()
    ci = TColor::GetColor("#0000ff");
    grae->SetMarkerColor(ci);
    grae->SetMarkerStyle(24);
+   grae->SetMarkerSize(1.5);
    
    TH1F *Graph_eff_graph3005 = new TH1F("Graph_eff_graph3005","Filter Efficiency for Online Calo Jet",120,0,132);
    Graph_eff_graph3005->SetMinimum(0);
@@ -431,7 +436,7 @@ void DisplacedJets_Run3_jetpt40_Eff_years()
    ci = TColor::GetColor("#ff0000");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(22);
-   entry->SetMarkerSize(1);
+   entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
    entry=leg->AddEntry("eff_graph","QCD multijet (2023)","ple");
    entry->SetLineColor(6);
@@ -439,7 +444,7 @@ void DisplacedJets_Run3_jetpt40_Eff_years()
    entry->SetLineWidth(1);
    entry->SetMarkerColor(6);
    entry->SetMarkerStyle(23);
-   entry->SetMarkerSize(1);
+   entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
    entry=leg->AddEntry("eff_graph","Data 2022","ple");
 
@@ -451,7 +456,7 @@ void DisplacedJets_Run3_jetpt40_Eff_years()
    ci = TColor::GetColor("#00cc00");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1);
+   entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
    entry=leg->AddEntry("eff_graph","#splitline{Data 2023 before HCAL}{conditions update}","ple");
    entry->SetLineColor(1);
@@ -459,7 +464,7 @@ void DisplacedJets_Run3_jetpt40_Eff_years()
    entry->SetLineWidth(1);
    entry->SetMarkerColor(1);
    entry->SetMarkerStyle(20);
-   entry->SetMarkerSize(1);
+   entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
    entry=leg->AddEntry("eff_graph","#splitline{Data 2023 after HCAL}{conditions update}","lpe");
 
@@ -471,7 +476,7 @@ void DisplacedJets_Run3_jetpt40_Eff_years()
    ci = TColor::GetColor("#0000ff");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(24);
-   entry->SetMarkerSize(1);
+   entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
    leg->Draw();
    TLatex *   tex = new TLatex(0.18,0.82,"CMS");

@@ -4,10 +4,10 @@
 void DisplacedJets_HT_performance_years_HT390()
 {
 //=========Macro generated from canvas: can/can
-//=========  (Sun Nov 23 15:41:00 2025) by ROOT version 6.34.04
+//=========  (Wed Dec 17 20:22:27 2025) by ROOT version 6.34.04
    TCanvas *can = new TCanvas("can", "can",0,62,800,800);
    can->SetHighLightColor(2);
-   can->Range(-297.8684,-0.25,1829.763,1.416667);
+   can->Range(-297.8684,-0.21,1829.763,1.19);
    can->SetFillColor(0);
    can->SetBorderMode(0);
    can->SetBorderSize(2);
@@ -47,11 +47,11 @@ void DisplacedJets_HT_performance_years_HT390()
    grae->SetTitle("");
    grae->SetFillColor(19);
    grae->SetMarkerStyle(20);
-   grae->SetMarkerSize(0.75);
+   grae->SetMarkerSize(1.5);
    
    TH1F *Graph_eff_graph3001 = new TH1F("Graph_eff_graph3001","",100,0,3300);
    Graph_eff_graph3001->SetMinimum(0);
-   Graph_eff_graph3001->SetMaximum(1.25);
+   Graph_eff_graph3001->SetMaximum(1.05);
    Graph_eff_graph3001->SetDirectory(nullptr);
    Graph_eff_graph3001->SetStats(0);
 
@@ -105,11 +105,11 @@ void DisplacedJets_HT_performance_years_HT390()
    grae->SetTitle("");
    grae->SetFillColor(19);
    grae->SetMarkerStyle(20);
-   grae->SetMarkerSize(0.75);
+   grae->SetMarkerSize(1.5);
    
    TH1F *Graph_eff_graph3002 = new TH1F("Graph_eff_graph3002","",100,0,3300);
    Graph_eff_graph3002->SetMinimum(0);
-   Graph_eff_graph3002->SetMaximum(1.25);
+   Graph_eff_graph3002->SetMaximum(1.05);
    Graph_eff_graph3002->SetDirectory(nullptr);
    Graph_eff_graph3002->SetStats(0);
 
@@ -167,7 +167,7 @@ void DisplacedJets_HT_performance_years_HT390()
    ci = TColor::GetColor("#0000ff");
    grae->SetMarkerColor(ci);
    grae->SetMarkerStyle(23);
-   grae->SetMarkerSize(0.75);
+   grae->SetMarkerSize(1.5);
    
    TH1F *Graph_eff_graph3003 = new TH1F("Graph_eff_graph3003","eff_HT_disp_430_variable",100,0,3300);
    Graph_eff_graph3003->SetMinimum(1.230267e-06);
@@ -202,7 +202,7 @@ void DisplacedJets_HT_performance_years_HT390()
    entry->SetLineWidth(1);
    entry->SetMarkerColor(1);
    entry->SetMarkerStyle(20);
-   entry->SetMarkerSize(0.75);
+   entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
    entry=leg->AddEntry("eff_graph","#splitline{Data 2023 after HCAL}{conditions update}","ple");
 
@@ -214,7 +214,7 @@ void DisplacedJets_HT_performance_years_HT390()
    ci = TColor::GetColor("#0000ff");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(23);
-   entry->SetMarkerSize(0.75);
+   entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
    leg->Draw();
    TLatex *   tex = new TLatex(0.18,0.82,"CMS");

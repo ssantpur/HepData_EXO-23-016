@@ -4,7 +4,7 @@
 void DisplacedJets_GenEff_cm()
 {
 //=========Macro generated from canvas: can/can
-//=========  (Mon Dec 15 16:46:02 2025) by ROOT version 6.34.04
+//=========  (Wed Dec 17 20:20:01 2025) by ROOT version 6.34.04
    TCanvas *can = new TCanvas("can", "can",0,62,800,800);
    gStyle->SetOptStat(0);
    can->SetHighLightColor(2);
@@ -53,7 +53,7 @@ void DisplacedJets_GenEff_cm()
    ci = TColor::GetColor("#0000ff");
    grae->SetMarkerColor(ci);
    grae->SetMarkerStyle(20);
-   grae->SetMarkerSize(0.8);
+   grae->SetMarkerSize(1.5);
    
    TH1F *Graph_eff_graph3001 = new TH1F("Graph_eff_graph3001","",100,0.01134,551.0987);
    Graph_eff_graph3001->SetMinimum(0);
@@ -70,7 +70,10 @@ void DisplacedJets_GenEff_cm()
    Graph_eff_graph3001->GetXaxis()->SetTitleFont(42);
    Graph_eff_graph3001->GetYaxis()->SetTitle("HLT per-parton tagging efficiency");
    Graph_eff_graph3001->GetYaxis()->SetLabelFont(42);
+   Graph_eff_graph3001->GetYaxis()->SetLabelSize(0);
    Graph_eff_graph3001->GetYaxis()->SetTitleSize(0.045);
+   Graph_eff_graph3001->GetYaxis()->SetTickLength(0);
+   Graph_eff_graph3001->GetYaxis()->SetTitleOffset(1.4);
    Graph_eff_graph3001->GetYaxis()->SetTitleFont(42);
    Graph_eff_graph3001->GetZaxis()->SetLabelFont(42);
    Graph_eff_graph3001->GetZaxis()->SetTitleOffset(1);
@@ -78,6 +81,27 @@ void DisplacedJets_GenEff_cm()
    grae->SetHistogram(Graph_eff_graph3001);
    
    grae->Draw("ape");
+   TGaxis *gaxis = new TGaxis(0.01134,0,0.01134,1,0,1,505,"S");
+   gaxis->SetLabelOffset(0.005);
+   gaxis->SetLabelSize(0.035);
+   gaxis->SetTickSize(0.03);
+   gaxis->SetGridLength(0);
+   gaxis->SetTitleOffset(1);
+   gaxis->SetTitleSize(0.04);
+   gaxis->SetTitleColor(1);
+   gaxis->SetTitleFont(62);
+   gaxis->SetLabelFont(42);
+   gaxis->Draw();
+   gaxis = new TGaxis(551.0987,0,551.0987,1,0,1,505,"+S");
+   gaxis->SetLabelOffset(0.005);
+   gaxis->SetLabelSize(0);
+   gaxis->SetTickSize(0.03);
+   gaxis->SetGridLength(0);
+   gaxis->SetTitleOffset(1);
+   gaxis->SetTitleSize(0.04);
+   gaxis->SetTitleColor(1);
+   gaxis->SetTitleFont(62);
+   gaxis->Draw();
    
    Double_t eff_graph_fx3002[46] = { 0.0142, 0.01785, 0.0225, 0.02835, 0.0357, 0.04495, 0.0566, 0.07125, 0.0897, 0.113, 0.142, 0.1785, 0.225, 0.2835, 0.357, 0.4495, 0.566,
    0.7125, 0.897, 1.13, 1.42, 1.785, 2.25, 2.835, 3.57, 4.495, 5.66, 7.125, 8.97, 11.3, 14.2, 17.85, 22.5,
@@ -109,7 +133,7 @@ void DisplacedJets_GenEff_cm()
    ci = TColor::GetColor("#00cc00");
    grae->SetMarkerColor(ci);
    grae->SetMarkerStyle(21);
-   grae->SetMarkerSize(0.8);
+   grae->SetMarkerSize(1.5);
    
    TH1F *Graph_eff_graph3002 = new TH1F("Graph_eff_graph3002","eff_dxy",100,0.01134,551.0987);
    Graph_eff_graph3002->SetMinimum(0.01900618);
@@ -157,7 +181,7 @@ void DisplacedJets_GenEff_cm()
    grae->SetLineWidth(2);
    grae->SetMarkerColor(6);
    grae->SetMarkerStyle(22);
-   grae->SetMarkerSize(0.8);
+   grae->SetMarkerSize(1.5);
    
    TH1F *Graph_eff_graph3003 = new TH1F("Graph_eff_graph3003","eff_dxy",100,0.01134,551.0987);
    Graph_eff_graph3003->SetMinimum(0.02959044);
@@ -188,7 +212,7 @@ void DisplacedJets_GenEff_cm()
    tex->SetTextSize(0.03);
    tex->SetLineWidth(2);
    tex->Draw();
-      tex = new TLatex(0.2,0.6,"#splitline{b/d/#tau}{Gen.-level p_{T} > 40GeV, |#eta| < 2.0}");
+      tex = new TLatex(0.2,0.6,"#splitline{b/d/#tau}{Gen.-level p_{T} > 40 GeV, |#eta| < 2.0}");
    tex->SetNDC();
    tex->SetTextFont(42);
    tex->SetTextSize(0.03);
@@ -212,7 +236,7 @@ void DisplacedJets_GenEff_cm()
    ci = TColor::GetColor("#0000ff");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(20);
-   entry->SetMarkerSize(0.8);
+   entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
    entry=leg->AddEntry("eff_graph","d quark","ple");
    entry->SetLineColor(6);
@@ -220,7 +244,7 @@ void DisplacedJets_GenEff_cm()
    entry->SetLineWidth(2);
    entry->SetMarkerColor(6);
    entry->SetMarkerStyle(22);
-   entry->SetMarkerSize(0.8);
+   entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
    entry=leg->AddEntry("eff_graph","#tau lepton","ple");
 
@@ -232,7 +256,7 @@ void DisplacedJets_GenEff_cm()
    ci = TColor::GetColor("#00cc00");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(0.8);
+   entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
    leg->Draw();
       tex = new TLatex(0.65,0.92,"(13.6 TeV)");

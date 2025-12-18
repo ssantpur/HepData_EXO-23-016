@@ -4,7 +4,7 @@
 void DisplacedJet_Trigger_Run3vsRun2_efficiency_gain()
 {
 //=========Macro generated from canvas: can/can
-//=========  (Mon Dec 15 21:16:20 2025) by ROOT version 6.34.04
+//=========  (Wed Dec 17 20:20:53 2025) by ROOT version 6.34.04
    TCanvas *can = new TCanvas("can", "can",0,62,800,800);
    gStyle->SetOptStat(0);
    can->SetHighLightColor(2);
@@ -36,7 +36,7 @@ void DisplacedJet_Trigger_Run3vsRun2_efficiency_gain()
    ci = TColor::GetColor("#ff0000");
    graph->SetMarkerColor(ci);
    graph->SetMarkerStyle(20);
-   graph->SetMarkerSize(1.5);
+   graph->SetMarkerSize(2);
    
    TH1F *Graph_Graph1 = new TH1F("Graph_Graph1","",100,0.09,109.99);
    Graph_Graph1->SetMinimum(0.5);
@@ -77,7 +77,7 @@ void DisplacedJet_Trigger_Run3vsRun2_efficiency_gain()
    ci = TColor::GetColor("#00cc00");
    graph->SetMarkerColor(ci);
    graph->SetMarkerStyle(21);
-   graph->SetMarkerSize(1.5);
+   graph->SetMarkerSize(2);
    
    TH1F *Graph_Graph2 = new TH1F("Graph_Graph2","",100,0.09,109.99);
    Graph_Graph2->SetMinimum(3.357628);
@@ -113,7 +113,7 @@ void DisplacedJet_Trigger_Run3vsRun2_efficiency_gain()
    ci = TColor::GetColor("#0000ff");
    graph->SetMarkerColor(ci);
    graph->SetMarkerStyle(22);
-   graph->SetMarkerSize(1.5);
+   graph->SetMarkerSize(2);
    
    TH1F *Graph_Graph3 = new TH1F("Graph_Graph3","",100,0.09,109.99);
    Graph_Graph3->SetMinimum(3.12747);
@@ -176,7 +176,7 @@ void DisplacedJet_Trigger_Run3vsRun2_efficiency_gain()
    ci = TColor::GetColor("#ff0000");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(20);
-   entry->SetMarkerSize(1.5);
+   entry->SetMarkerSize(2);
    entry->SetTextFont(42);
    entry=leg->AddEntry("","m_{S} = 40 GeV","p");
    entry->SetLineColor(1);
@@ -186,7 +186,7 @@ void DisplacedJet_Trigger_Run3vsRun2_efficiency_gain()
    ci = TColor::GetColor("#00cc00");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1.5);
+   entry->SetMarkerSize(2);
    entry->SetTextFont(42);
    entry=leg->AddEntry("","m_{S} = 15 GeV","p");
    entry->SetLineColor(1);
@@ -196,7 +196,7 @@ void DisplacedJet_Trigger_Run3vsRun2_efficiency_gain()
    ci = TColor::GetColor("#0000ff");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(22);
-   entry->SetMarkerSize(1.5);
+   entry->SetMarkerSize(2);
    entry->SetTextFont(42);
    leg->Draw();
    can->Modified();

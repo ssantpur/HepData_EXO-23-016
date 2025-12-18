@@ -4,11 +4,11 @@
 void DisplacedJet_Trigger_Run3_signal_prompttrack_veto_eff()
 {
 //=========Macro generated from canvas: can/can
-//=========  (Mon Dec 15 20:33:39 2025) by ROOT version 6.34.04
+//=========  (Wed Dec 17 20:26:07 2025) by ROOT version 6.34.04
    TCanvas *can = new TCanvas("can", "can",0,62,800,800);
    gStyle->SetOptStat(0);
    can->SetHighLightColor(2);
-   can->Range(-2.906154,-0.1923077,16.47846,1.410256);
+   can->Range(-2.906154,-0.1615385,16.47846,1.184615);
    can->SetFillColor(0);
    can->SetBorderMode(0);
    can->SetBorderSize(2);
@@ -44,11 +44,11 @@ void DisplacedJet_Trigger_Run3_signal_prompttrack_veto_eff()
    ci = TColor::GetColor("#00cc00");
    grae->SetMarkerColor(ci);
    grae->SetMarkerStyle(20);
-   grae->SetMarkerSize(0.75);
+   grae->SetMarkerSize(1.5);
    
    TH1F *Graph_eff_graph3001 = new TH1F("Graph_eff_graph3001","",100,-2.5,21.5);
    Graph_eff_graph3001->SetMinimum(0);
-   Graph_eff_graph3001->SetMaximum(1.25);
+   Graph_eff_graph3001->SetMaximum(1.05);
    Graph_eff_graph3001->SetDirectory(nullptr);
    Graph_eff_graph3001->SetStats(0);
 
@@ -94,7 +94,7 @@ void DisplacedJet_Trigger_Run3_signal_prompttrack_veto_eff()
    ci = TColor::GetColor("#0000ff");
    grae->SetMarkerColor(ci);
    grae->SetMarkerStyle(21);
-   grae->SetMarkerSize(0.75);
+   grae->SetMarkerSize(1.5);
    
    TH1F *Graph_eff_graph3002 = new TH1F("Graph_eff_graph3002","Filter Efficiencey for Prompt Track Requirement",100,-2.5,21.5);
    Graph_eff_graph3002->SetMinimum(0.004245994);
@@ -126,7 +126,7 @@ void DisplacedJet_Trigger_Run3_signal_prompttrack_veto_eff()
    tex->SetLineWidth(2);
    tex->Draw();
    
-   TLegend *leg = new TLegend(0.48,0.63,0.78,0.81,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.48,0.6,0.86,0.84,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetLineColor(0);
    leg->SetLineStyle(1);
@@ -146,7 +146,7 @@ void DisplacedJet_Trigger_Run3_signal_prompttrack_veto_eff()
    ci = TColor::GetColor("#00cc00");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(20);
-   entry->SetMarkerSize(0.75);
+   entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
    entry=leg->AddEntry("eff_graph"," c#tau = 100 mm","ple");
 
@@ -158,10 +158,10 @@ void DisplacedJet_Trigger_Run3_signal_prompttrack_veto_eff()
    ci = TColor::GetColor("#0000ff");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(0.75);
+   entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
    leg->Draw();
-      tex = new TLatex(0.45,0.52,"#splitline{H #rightarrow SS, S #rightarrow b#bar{b}}{m_{H} = 125 GeV, m_{S} = 40 GeV}");
+      tex = new TLatex(0.48,0.52,"#splitline{H #rightarrow SS, S #rightarrow b#bar{b}}{m_{H} = 125 GeV, m_{S} = 40 GeV}");
    tex->SetNDC();
    tex->SetTextFont(42);
    tex->SetTextSize(0.035);
