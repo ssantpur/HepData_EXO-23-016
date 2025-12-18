@@ -1557,7 +1557,7 @@ def makeScoutingMuonDataEffVSPtTable():
     table.description = "L1T+HLT efficiency of the dimuon scouting trigger as a function of the subleading muon $p_{T}$, for 2024 data. The efficiency of the L1T dimuon seeds (pink squares) and the HLT dimuon scouting trigger with the vertex-unconstrained reconstruction algorithm (blue triangles) is shown. The events in the denominator are required to have at least two vertex-unconstrained muons ($N_{\\mu(\\text{no-vtx})} > 2$) and additionally have $\\chi^2/N_{\\text{dof}} < 3$ and $\\Delta R > 0.1$."
 
     table.location = "Data from Fig. 48"
-    table.add_image("data_Celia/LLP-Paper_DoubleMuonEfficiency_data_pt.pdf")
+    table.add_image("data_Celia/Figure_048.pdf")
     reader = RootFileReader("data_Celia/Scouting_DoubleMuonEfficiency_data_pt.root")
     graph_L1 = reader.read_teff("efficiency_pt_L1;1")
     graph_HLT = reader.read_teff("efficiency_pt_HLT;1")
@@ -1579,7 +1579,7 @@ def makeScoutingMuonSigEffVSLxyTable():
     table.description = "L1T+HLT efficiency of the dimuon scouting trigger as a function of the generator-level $L_{xy}$, for HAHM signal events, for 2024 conditions. The efficiency is shown for $m_{Z_D} = 14$ GeV and $c\\tau = 100$ mm (pink squares) and $m_{Z_D} = 2.5$ GeV and $c\\tau = 100$ mm (blue triangles). The muons are required to have $p_{T} > 15$ GeV and $|\\eta| < 2.4$ at the generator level."
 
     table.location = "Data from Fig. 49"
-    table.add_image("data_Celia/LLP-Paper_signalEfficiency_lxy.pdf")
+    table.add_image("data_Celia/Figure_049.pdf")
     reader = RootFileReader("data_Celia/Scouting_signalEfficiency_lxy.root")
     graph_2p5 = reader.read_teff("efficiency_minlxy_DoubleMuonNoVtx_2p5_100mm;1")
     graph_14 = reader.read_teff("efficiency_minlxy_DoubleMuonNoVtx_14_100mm;1")
@@ -1601,14 +1601,14 @@ def makeScoutingMuonSigEffVSPtTable(mass):
     
     if mass=="2.5":
         table.location = "Data from Fig. 50 left"
-        table.add_image("data_Celia/LLP-Paper_signalEfficiency_pt_mZD-2p5GeV.pdf")
+        table.add_image("data_Celia/Figure_050-a.pdf")
         reader = RootFileReader("data_Celia/Scouting_signalEfficiency_pt_mZD-2p5GeV.root")
         graph_1mm = reader.read_teff("efficiency_minpt_DoubleMuonNoVtx_2p5_1mm;1")
         graph_10mm = reader.read_teff("efficiency_minpt_DoubleMuonNoVtx_2p5_10mm;1")
         graph_100mm = reader.read_teff("efficiency_minpt_DoubleMuonNoVtx_2p5_100mm;1")
     if mass=="14":
         table.location = "Data from Fig. 50 right"
-        table.add_image("data_Celia/LLP-Paper_signalEfficiency_pt_mZD-14GeV.pdf")
+        table.add_image("data_Celia/Figure_050-b.pdf")
         reader = RootFileReader("data_Celia/Scouting_signalEfficiency_pt_mZD-14GeV.root")
         graph_1mm = reader.read_teff("efficiency_minpt_DoubleMuonNoVtx_14_1mm;1")
         graph_10mm = reader.read_teff("efficiency_minpt_DoubleMuonNoVtx_14_10mm;1")
@@ -1632,13 +1632,13 @@ def makeScoutingMuonRecoEffVSLxyTable(mass):
     
     if mass=="2.5":
         table.location = "Data from Fig. 51 left"
-        table.add_image("data_Celia/LLP-Paper_signalEfficiency_recolxy_2p5GeV_100mm.pdf")
+        table.add_image("data_Celia/Figure_051-a.pdf")
         reader = RootFileReader("data_Celia/Scouting_signalEfficiency_lxy_2p5GeV_100mm.root")
         graph_vtx = reader.read_teff("efficiency_lxy_vtx_2p5_100mm;1")
         graph_novtx = reader.read_teff("efficiency_lxy_novtx_2p5_100mm;1")
     if mass=="14":
         table.location = "Data from Fig. 51 right"
-        table.add_image("data_Celia/LLP-Paper_signalEfficiency_recolxy_14GeV_100mm.pdf")
+        table.add_image("data_Celia/Figure_051-b.pdf")
         reader = RootFileReader("data_Celia/Scouting_signalEfficiency_lxy_14GeV_100mm.root")
         graph_vtx = reader.read_teff("efficiency_lxy_vtx_14_100mm;1")
         graph_novtx = reader.read_teff("efficiency_lxy_novtx_14_100mm;1")
